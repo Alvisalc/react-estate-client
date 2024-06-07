@@ -1,13 +1,16 @@
-@import "./responsive.scss";
+@import "../../responsive.scss";
 
 .layout{
-    background-color: lightblue;
+    background-color: #e6f7ff;
     height: 100vh;
     max-width: 1366px; //change 1440px later
     margin-left: auto;
     margin-right: auto;
     padding-left: 20px;
     padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+
 
     @include lg{
         background-color: rgb(247, 210, 196);
@@ -22,6 +25,11 @@
     @include sm{
         background-color: rgb(239, 200, 200);
         max-width: 640px;
+    }
+
+    .content{
+        background-color: lightyellow;
+        flex: 1;
     }
 }
 
